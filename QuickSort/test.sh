@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Lenght of input list
+INPUT_LIST_LEN=500000
+
 rm -f ./result.csv
 echo "Haskell, C" >> ./result.csv
 
@@ -9,7 +12,7 @@ for i in {1..10}; do
     rm -f ./input.txt
 
     # Generate some random numbers
-    python3 ./rand.py 500000 "./input.txt"
+    python3 ./rand.py $INPUT_LIST_LEN "./input.txt"
 
     exec 3>&1 4>&2
     time_hs=$( TIMEFORMAT="%R"; { time ./quicksort_hs 1>&3 2>&4; } 2>&1)
