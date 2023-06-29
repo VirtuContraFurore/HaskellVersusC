@@ -37,7 +37,7 @@ void main(){
     FILE *myFile;
     myFile = fopen("input.txt", "r");
 
-    int * data = (int *) malloc(10000000*sizeof(int));
+    int * data = (int *) malloc(100000000*sizeof(int));
     if( data == NULL ){
         printf("Malloc failure");
         exit(-1);
