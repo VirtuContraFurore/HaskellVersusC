@@ -10,7 +10,7 @@ file = sys.argv[2]
 # Create an ordered list of random integers
 data_list = []  # type: list[int]
 for i in range(0,int(cnt)):
-    data_list.append(random.randint(0,2**32-1))
+    data_list.append(random.randint(0,2**31-1))
 data_list = sorted(data_list)  # Sort data_list
 
 # Select a random element from this list
