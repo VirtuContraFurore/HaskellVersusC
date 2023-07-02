@@ -1,4 +1,12 @@
 # Instructions
+
+## To execute all
+In root folder run
+`$ ./run_tests.sh`
+results will be available in the `./results` directory.
+
+
+## To execute each test individually
 In each subfolders run
 `$ make`
 `$ ./test.sh`
